@@ -2,6 +2,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header-logo {
   font-style: italic;
   font-weight: 700;
