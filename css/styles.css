@@ -10,6 +10,22 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+
+.accent {
+  color: #fd9222;
+}
+
+/* HEADER */
+
 .header-logo {
   font-style: italic;
   font-weight: 700;
@@ -29,4 +45,257 @@ a {
   line-height: 1.14286;
   letter-spacing: -0.02em;
   color: #111;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: #fd9222;
+}
+
+/* HERO */
+
+.hero {
+  background: rgba(17, 17, 17, 0.6);
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.hero-btn-main {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero-btn-link {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+.hero-btn-scroll {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+/* FEATURES */
+
+.feauters {
+  background-color: #1e1823;
+}
+.feauters-list {
+}
+.feauters-item {
+}
+.feauters-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.feauters-text {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* TASTE */
+
+.taste {
+}
+
+.taste-title {
+}
+.taste-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+}
+.taste-list {
+}
+.taste-list-item {
+}
+.taste-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* MADE */
+
+.made {
+}
+
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #111;
+}
+.made-list {
+}
+.made-list-item {
+}
+.made-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+.made-list-item > {
+}
+
+/* PRODUCTS */
+
+.products {
+}
+
+.products-list {
+}
+.products-list-item {
+}
+.products-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.products-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+/* SELLERS */
+
+.sellers {
+}
+.sellers-title {
+}
+.sellers-list {
+}
+.sellers-list-item {
+}
+.sellers-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+/* LOVED */
+
+.loved {
+}
+.loved-title {
+}
+.accent {
+}
+.loved-list {
+}
+.loved-list-item {
+}
+.loved-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+}
+.loved-text {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.loved-btn {
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #1e1823;
+}
+.footer-text {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21429;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.footer-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #ffffff;
+}
+.footer-soc-list {
+}
+.footer-soc-item {
+}
+.footer-soc-link {
+}
+.footer-contacts {
+}
+.footer-contacts-list {
+  font-style: normal;
+}
+.footer-contacts-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+.footer-contacts-item {
+}
+.footer-menu-list {
+}
+.footer-menu-item {
+}
+.footer-menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14286;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 }
