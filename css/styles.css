@@ -173,7 +173,7 @@ a {
 /* TASTE */
 
 .taste {
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -237,6 +237,8 @@ a {
 /* PRODUCTS */
 
 .products {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .products-list {
@@ -269,6 +271,8 @@ a {
 /* SELLERS */
 
 .sellers {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .sellers-title {
   margin-bottom: 50px;
@@ -290,6 +294,8 @@ a {
 /* LOVED */
 
 .loved {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .loved-title {
   margin-bottom: 50px;
@@ -320,13 +326,17 @@ a {
   font-weight: 600;
   font-size: 18px;
   color: #111;
+  display: block;
   margin: 0 auto;
+  margin-bottom: 120px;
 }
 
 /* FOOTER */
 
 .footer {
   background: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .footer-text {
   font-weight: 500;
@@ -334,8 +344,10 @@ a {
   line-height: 1.21429;
   letter-spacing: -0.02em;
   color: #ffffff;
+  max-width: 300px;
+  padding-top: 50px;
 }
-.footer-subtitle {
+.footer-subtitle-soc {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28571;
@@ -347,6 +359,14 @@ a {
 .footer-soc-item {
 }
 .footer-soc-link {
+}
+.footer-subtitle-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #ffffff;
+  /* text-align: right; */
 }
 .footer-contacts {
 }
@@ -364,8 +384,10 @@ a {
 .footer-contacts-item {
 }
 .footer-menu-list {
+  display: flex;
 }
 .footer-menu-item {
+  margin-right: 24px;
 }
 .footer-menu-link {
   font-weight: 500;
