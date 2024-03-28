@@ -2,12 +2,37 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 1166;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .title {
@@ -25,6 +50,11 @@ a {
 }
 
 /* HEADER */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
 
 .header-logo {
   font-style: italic;
@@ -54,8 +84,15 @@ a {
 
 /* HERO */
 
+.hero-wrap {
+  border-radius: 30px;
+  background-color: rgba(17, 17, 17, 0.6);
+  padding: 380px 40px 40px 40px;
+}
+
 .hero {
   background: rgba(17, 17, 17, 0.6);
+  padding-bottom: 80px;
 }
 
 .hero-title {
@@ -64,6 +101,8 @@ a {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  max-width: 484px;
+  margin-bottom: 32px;
 }
 
 .hero-btn-main {
@@ -91,8 +130,13 @@ a {
 
 .feauters {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .feauters-list {
+  padding-left: 18px;
+  padding-right: 18px;
+  display: flex;
 }
 .feauters-item {
 }
@@ -100,12 +144,17 @@ a {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 18px;
 }
 .feauters-text {
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 68px;
+  max-width: 308px;
+  margin-right: 88px;
+  /* padding-right: 88px; */
 }
 
 .visually-hidden {
@@ -124,9 +173,14 @@ a {
 /* TASTE */
 
 .taste {
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .taste-title {
+  max-width: 412px;
+  margin: 0 auto;
+  padding-bottom: 28px;
 }
 .taste-text {
   font-size: 14px;
@@ -134,6 +188,9 @@ a {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
+  max-width: 486px;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 .taste-list {
 }
@@ -146,11 +203,16 @@ a {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 28px;
 }
 
 /* MADE */
-
+.made-title {
+  margin-bottom: 50px;
+}
 .made {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .made-subtitle {
@@ -158,18 +220,18 @@ a {
   font-size: 18px;
   line-height: 1.33333;
   color: #111;
+  margin-bottom: 28px;
 }
 .made-list {
 }
-.made-list-item {
+.made-list-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 .made-text {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111;
-}
-.made-list-item > {
 }
 
 /* PRODUCTS */
@@ -188,6 +250,7 @@ a {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  margin-bottom: 2px;
 }
 
 .products-text {
@@ -196,6 +259,11 @@ a {
   line-height: 1.16667;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
+  margin-bottom: 18px;
+}
+
+.products-btn {
+  margin-bottom: 40px;
 }
 
 /* SELLERS */
@@ -203,6 +271,7 @@ a {
 .sellers {
 }
 .sellers-title {
+  margin-bottom: 50px;
 }
 .sellers-list {
 }
@@ -215,6 +284,7 @@ a {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  margin-bottom: 28px;
 }
 
 /* LOVED */
@@ -222,10 +292,12 @@ a {
 .loved {
 }
 .loved-title {
+  margin-bottom: 50px;
 }
 .accent {
 }
 .loved-list {
+  margin-bottom: 49px;
 }
 .loved-list-item {
 }
@@ -235,17 +307,20 @@ a {
   line-height: 1.33;
   text-align: center;
   color: #111;
+  margin-bottom: 24px;
 }
 .loved-text {
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
   text-align: center;
+  margin-bottom: 24px;
 }
 .loved-btn {
   font-weight: 600;
   font-size: 18px;
   color: #111;
+  margin: 0 auto;
 }
 
 /* FOOTER */
