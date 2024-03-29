@@ -37,6 +37,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  /* background-color: #fafafa; */
 }
 
 .title {
@@ -162,6 +163,7 @@ a {
   background-color: transparent;
   padding: 14px 40px;
   border-radius: 100px;
+  border: 1px solid #fff;
 }
 
 .hero-btn-scroll {
@@ -244,7 +246,7 @@ a {
   flex-wrap: wrap;
   /* gap: 32px; */
   column-gap: 32px;
-  row-gap: 32px;
+  row-gap: 24px;
 }
 .taste-item {
   width: calc((100% - 3 * 32px) / 4);
@@ -279,12 +281,9 @@ a {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #fff;
-  /* margin-bottom: 28px; */
+  /* color: #fff; */
+
   padding-left: 28px;
-}
-.black {
-  color: #111111;
 }
 
 /* MADE */
@@ -295,6 +294,10 @@ a {
 .made {
   padding-top: 60px;
   padding-bottom: 60px;
+  /* display: flex; */
+}
+
+.made-image {
 }
 
 .made-subtitle {
@@ -303,12 +306,20 @@ a {
   line-height: 1.33333;
   color: #111;
   margin-bottom: 28px;
+  display: flex;
 }
 .made-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  padding-right: 32px;
+  padding-left: 20px;
 }
-.made-list-item:not(:last-child) {
-  margin-bottom: 24px;
+.made-list-item {
+  background-color: #ffffff;
+  border-radius: 15px;
 }
+
 .made-text {
   font-size: 14px;
   line-height: 1.29;
@@ -323,10 +334,31 @@ a {
   padding-bottom: 60px;
 }
 
+.products-title {
+  margin-bottom: 50px;
+}
+
 .products-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 18px;
+  row-gap: 24px;
 }
 .products-list-item {
+  width: calc((100% - 3 * 18px) / 4);
+
+  padding: 32px;
 }
+
+/* .products-wrapper {
+  background-color: FFFFFF;
+  border-radius: 15px;
+  border: 1px solid #fff;
+} */
+
+.products-image {
+}
+
 .products-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -360,9 +392,17 @@ a {
   margin-bottom: 50px;
 }
 .sellers-list {
+  display: flex;
+  gap: 16px;
 }
 .sellers-list-item {
+  border: 1px solid #fff;
 }
+
+.sellers-image {
+  margin-bottom: 28px;
+}
+
 .sellers-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -371,6 +411,7 @@ a {
   text-transform: uppercase;
   color: #111;
   margin-bottom: 28px;
+  text-align: center;
 }
 
 /* LOVED */
