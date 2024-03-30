@@ -309,7 +309,7 @@ a {
 .made-sub-text-wrapper {
   background-color: #ffffff;
   border-radius: 15px;
-  /* margin-left: 20px; */
+  margin-left: 20px;
   /* padding-left: 32px; */
 }
 
@@ -326,7 +326,8 @@ a {
 }
 .made-list {
   list-style-type: disc;
-  padding: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .made-list-item {
   /* margin-bottom: 24px; */
@@ -335,6 +336,10 @@ a {
 
 .made-list-item:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.made-list-item:last-child {
+  margin-bottom: 26px;
 }
 
 .made-text {
