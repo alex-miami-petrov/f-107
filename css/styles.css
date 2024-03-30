@@ -310,6 +310,9 @@ a {
   border-radius: 15px;
   margin-left: 20px;
   padding-left: 32px;
+  padding-bottom: 52px;
+  padding-right: 59px;
+  padding-top: 84px;
 }
 
 .made-subtitle {
@@ -327,8 +330,9 @@ a {
   /* display: flex;
   flex-direction: column; */
   list-style-type: disc;
-  margin-left: 38px;
+  /* margin-left: 38px; */
   margin-right: 32px;
+  padding-left: 18px;
 
   /* padding-left: 20px; */
 }
