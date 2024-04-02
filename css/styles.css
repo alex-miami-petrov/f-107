@@ -108,6 +108,10 @@ a {
   display: flex;
   gap: 14px;
 }
+.header-soc-icon {
+  fill: transparent;
+  stroke: #111;
+}
 
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -124,6 +128,15 @@ a {
   border-radius: 30px;
   background-color: rgba(17, 17, 17, 0.6);
   padding: 380px 40px 40px 40px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.4) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../images/chocolate_main.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-title::selection {
@@ -173,6 +186,23 @@ a {
   letter-spacing: -0.03em;
   color: #fff;
   margin-left: auto;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-btn-scroll::after {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 100%;
 }
 
 /* FEATURES */
@@ -325,14 +355,33 @@ a {
   margin-left: 32px;
 }
 .made-list {
-  list-style-type: disc;
+  /* list-style-type: disc; */
   padding-left: 32px;
   padding-right: 32px;
 }
 .made-list-item {
   /* margin-bottom: 24px; */
   margin-left: 18px;
+  /* display: flex; */
 }
+.made-list-item:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+  /* margin-right: 8px; */
+}
+
+/* .made-list-item span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+  margin-right: 8px;
+} */
 
 .made-list-item:not(:last-child) {
   margin-bottom: 24px;
