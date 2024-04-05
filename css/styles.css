@@ -369,17 +369,19 @@ a {
 }
 .made-list-item {
   /* margin-bottom: 24px; */
-  margin-left: 18px;
-  /* display: flex; */
+  /* margin-left: 18px; */
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
-.made-list-item:before {
+
+.made-list-item::before {
   content: "";
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #4c4c4c;
   border: 1px solid #eceded;
-  /* margin-right: 8px; */
 }
 
 /* .made-list-item span {
@@ -404,6 +406,7 @@ a {
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111;
+  width: 100%;
 }
 
 /* PRODUCTS */
@@ -482,8 +485,29 @@ a {
   border: none;
 }
 
+.sellers-slide {
+  position: relative;
+  overflow: hidden;
+}
+
 .sellers-image {
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
+}
+
+.text-slide {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  top: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
 }
 
 .sellers-subtitle {
@@ -493,8 +517,12 @@ a {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
-  margin-bottom: 28px;
+  padding: 28px;
   text-align: center;
+}
+
+.sellers-list-item:hover .text-slide {
+  transform: translateY(0);
 }
 
 /* LOVED */
@@ -516,7 +544,10 @@ a {
 }
 
 .loved-image {
-  margin: 0 auto;
+  position: absolute;
+  left: 140px;
+  bottom: 130px;
+  /* margin: 0 auto; */
   /* margin-bottom: 18px; */
 }
 
@@ -525,13 +556,15 @@ a {
   border-radius: 15px;
   border: none;
   width: calc((100% - 2 * 28px) / 3);
+  padding: 24px;
+  position: relative;
 }
 
-.loved-img-wrapper {
+/* .loved-img-wrapper {
   position: relative;
   bottom: 42px;
   margin-bottom: -24px;
-}
+} */
 
 .loved-subtitle {
   font-weight: 600;
@@ -546,10 +579,10 @@ a {
   line-height: 1.28571;
   letter-spacing: -0.02em;
   text-align: center;
-  margin-bottom: 24px;
-  min-width: 312px;
-  padding-left: 24px;
-  padding-right: 24px;
+  /* margin-bottom: 24px; */
+  max-width: 312px;
+  /* padding-left: 24px;
+  padding-right: 24px; */
 }
 .loved-btn {
   font-weight: 600;
@@ -557,6 +590,7 @@ a {
   color: #111;
   display: block;
   margin: 0 auto;
+  min-width: 312px;
   margin-bottom: 120px;
   background-color: transparent;
   padding: 14px 40px;
