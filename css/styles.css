@@ -167,6 +167,14 @@ a {
   border-radius: 100px;
   padding: 14px 40px;
   margin-right: 14px;
+  transition-property: background-color, color;
+  transition-duration: 1ms;
+}
+
+.hero-btn-main:hover {
+  background-color: #fcf1e0;
+  color: #fd9222;
+  translate: transform;
 }
 
 .hero-btn-link {
@@ -467,6 +475,7 @@ a {
   gap: 16px;
 }
 .sellers-list-item {
+  width: calc((100% - 32px) / 3);
   border: 1px solid #fff;
   background-color: #ffffff;
   border-radius: 15px;
@@ -495,7 +504,7 @@ a {
   padding-bottom: 60px;
 }
 .loved-title {
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 .accent {
 }
@@ -508,7 +517,7 @@ a {
 
 .loved-image {
   margin: 0 auto;
-  margin-bottom: 18px;
+  /* margin-bottom: 18px; */
 }
 
 .loved-list-item {
@@ -517,6 +526,13 @@ a {
   border: none;
   width: calc((100% - 2 * 28px) / 3);
 }
+
+.loved-img-wrapper {
+  position: relative;
+  bottom: 42px;
+  margin-bottom: -24px;
+}
+
 .loved-subtitle {
   font-weight: 600;
   font-size: 18px;
