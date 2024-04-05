@@ -613,6 +613,11 @@ a {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+.footer-title-wrap {
+  display: flex;
+}
+
 .footer-subtitle {
   font-weight: 500;
   font-size: 28px;
@@ -623,10 +628,17 @@ a {
   padding-top: 50px;
 }
 
-.footer-soc-wrap {
+.footer-s-a-container {
   display: flex;
-  justify-content: end;
-  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 14px;
+  column-gap: 50px;
+}
+
+. .footer-soc-wrap {
+  display: flex;
+  /* justify-content: end;
+  align-items: center; */
 }
 
 .footer-subtitle-soc {
