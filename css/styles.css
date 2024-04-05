@@ -635,7 +635,7 @@ a {
   column-gap: 50px;
 }
 
-. .footer-soc-wrap {
+.footer-soc-wrap {
   display: flex;
   /* justify-content: end;
   align-items: center; */
