@@ -614,6 +614,12 @@ a {
   padding-bottom: 50px;
 }
 
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .footer-title-wrap {
   display: flex;
 }
@@ -629,16 +635,10 @@ a {
 }
 
 .footer-s-a-container {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 14px;
-  column-gap: 50px;
 }
 
 .footer-soc-wrap {
   display: flex;
-  /* justify-content: end;
-  align-items: center; */
 }
 
 .footer-subtitle-soc {
@@ -663,7 +663,6 @@ a {
   line-height: 1.28571;
   text-align: center;
   color: #ffffff;
-  /* text-align: right; */
 }
 .footer-contacts-wrap {
   display: flex;
