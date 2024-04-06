@@ -804,23 +804,25 @@ a {
   /* margin-bottom: 48px; */
 }
 
-.footer-menu-list::before {
+/* .footer-menu-list::before {
   content: "";
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   width: 1136px;
   height: 0px;
   position: absolute;
-}
+} */
 
 .footer-menu {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 24px;
-  border-top: 24px;
+
+  /* border-top: 24px; */
 }
 .footer-menu-item {
-  margin-bottom: 48px;
+  /* margin-bottom: 48px;
   text-align: start;
   position: relative;
-  top: 42px;
+  top: 42px; */
   /* display: flex;
   gap: 24px; */
 }
