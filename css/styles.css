@@ -228,12 +228,16 @@ a {
   border-radius: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  transition-property: color;
+  transition-duration: 1ms;
 }
 
 .hero-btn-scroll:hover::after {
   background-color: #fd9222;
   background-image: url(../images/scroll-white.svg);
-  color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  translate: transform;
 }
 
 /* FEATURES */
@@ -749,7 +753,7 @@ a {
   /* text-align: start; */
 }
 .footer-subtitle-soc {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   margin-bottom: 14px;
   text-align: start;
