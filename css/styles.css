@@ -185,6 +185,14 @@ a {
   padding: 14px 40px;
   border-radius: 100px;
   border: 1px solid #fff;
+  transition-property: background-color, color;
+  transition-duration: 1ms;
+}
+
+.hero-btn-link:hover {
+  color: #fd9222;
+  border-color: #fd9222;
+  translate: transform;
 }
 
 .hero-btn-scroll {
@@ -198,6 +206,13 @@ a {
   gap: 14px;
   /* justify-content: center; */
   align-items: center;
+  transition-property: color;
+  transition-duration: 1ms;
+}
+
+.hero-btn-scroll:hover {
+  color: #fd9222;
+  translate: transform;
 }
 
 .hero-btn-scroll::after {
@@ -206,7 +221,6 @@ a {
   align-items: center;
   justify-content: center;
   margin-left: auto; */
-  color: #fff;
   width: 38px;
   height: 38px;
   background-color: #ffffff;
@@ -214,6 +228,12 @@ a {
   border-radius: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.hero-btn-scroll:hover::after {
+  background-color: #fd9222;
+  background-image: url(../images/scroll-white.svg);
+  color: #ffffff;
 }
 
 /* FEATURES */
@@ -511,6 +531,7 @@ a {
   color: #fafafa;
   transform: translateY(100%);
   transition: transform 250ms linear;
+  backdrop-filter: blur(15px);
 }
 
 .sellers-subtitle {
@@ -610,18 +631,19 @@ a {
 
 .footer {
   background: #1e1823;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 20px 0;
+  margin: 0 auto;
+  color: #ffffff;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
 }
 
-.footer-wrap {
+.footer-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer-title-wrap {
-  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 50px;
+  gap: 63px;
 }
 
 .footer-subtitle {
@@ -629,15 +651,139 @@ a {
   font-size: 28px;
   line-height: 1.21429;
   letter-spacing: -0.02em;
-  color: #ffffff;
+  /* color: #ffffff; */
   max-width: 300px;
   padding-top: 50px;
+  margin-bottom: 54px;
+  text-align: start;
 }
 
-.footer-s-a-container {
+.footer-menu-link {
+  position: relative;
 }
 
-.footer-soc-wrap {
+.footer-menu-link::before,
+.footer-menu-link::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--orange-color);
+  transition: 0.2s linear;
+}
+
+.footer-menu-link::after {
+  left: 0;
+  bottom: 23px;
+}
+
+.footer-menu-link::before {
+  right: 0;
+  top: 23px;
+}
+
+.footer-menu-link:hover::after,
+.footer-menu-link:hover::before {
+  width: 100%;
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: var(--orange-color);
+}
+
+.ftr-contact {
+  margin-left: 0;
+}
+
+.footer-subtitle-contacts {
+  margin-bottom: 14px;
+  text-align: start;
+}
+
+.footer-contacts-list {
+  margin-bottom: 32px;
+  text-align: start;
+}
+
+.footer-contacts-item {
+  column-gap: 4px;
+}
+
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.footer-contacts-link {
+  color: #ffffff;
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: orange;
+}
+
+.ftr-social {
+  margin-left: 469px;
+}
+
+.footer-soc-list {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+.footer-subtitle-soc {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 14px;
+}
+.footer-soc-icon {
+  fill: none;
+  stroke: white;
+  cursor: pointer;
+}
+
+.footer-soc-icon:hover,
+.footer-soc-icon:focus {
+  stroke: orange;
+}
+.footer-menu-list {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* margin: 0; */
+  display: flex;
+  gap: 24px;
+}
+.footer-menu {
+  margin-top: 42px;
+}
+.footer-menu-item {
+  margin-bottom: 62px;
+  text-align: start;
+}
+
+.icon-close_cros {
+  fill: none;
+  stroke: var(--footer-color);
+}
+.footer-soc-item {
+  transition: 0.35s linear;
+}
+.footer-soc-item:hover {
+  transform: rotate(1turn);
+}
+.footer-contacts-item {
+  transition: 0.35s linear;
+}
+.footer-contacts-item:hover {
+  transform: translateX(5px);
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: space-between;
+}
+/* .footer-soc-wrap {
   display: flex;
 }
 
@@ -679,6 +825,7 @@ a {
   color: #ffffff;
 }
 .footer-contacts-item {
+  color: #ffffff;
 }
 .footer-menu-list {
   display: flex;
@@ -692,4 +839,4 @@ a {
   line-height: 1.14286;
   letter-spacing: -0.02em;
   color: #ffffff;
-}
+} */
