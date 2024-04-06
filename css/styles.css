@@ -661,13 +661,13 @@ a {
   line-height: 1.21429;
   letter-spacing: -0.02em;
   /* color: #ffffff; */
-  max-width: 300px;
+  /* max-width: 300px; */
   padding-top: 50px;
   margin-bottom: 54px;
   text-align: start;
 }
 
-.footer-menu-link {
+/* .footer-menu-link {
   position: relative;
 }
 
@@ -678,7 +678,7 @@ a {
   content: "";
   width: 0;
   height: 2px;
-  background-color: var(--orange-color);
+  background-color: orange;
   transition: 0.2s linear;
 }
 
@@ -690,20 +690,21 @@ a {
 .footer-menu-link::before {
   right: 0;
   top: 23px;
-}
+} */
 
-.footer-menu-link:hover::after,
+/* .footer-menu-link:hover::after,
 .footer-menu-link:hover::before {
   width: 100%;
 }
 
 .footer-menu-link:hover,
 .footer-menu-link:focus {
-  color: var(--orange-color);
-}
+  color: orange;
+} */
 
 .ftr-contact {
   margin-left: 0;
+  margin-top: 28px;
   /* position: absolute;
   left: 100%; */
 }
@@ -751,7 +752,8 @@ a {
   display: flex;
   flex-direction: row;
   margin-bottom: 14px;
-  /* text-align: start; */
+  text-align: start;
+  justify-content: normal;
 }
 .footer-soc-icon {
   fill: none;
@@ -768,19 +770,43 @@ a {
   /* margin: 0; */
   display: flex;
   gap: 24px;
+  margin-top: 50px;
+  /* position: absolute; */
 }
+
+.footer-menu-list::before {
+  content: "";
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 1136px;
+  height: 0px;
+  position: absolute;
+
+  /* top: 0; */
+}
+
 .footer-menu {
   margin-top: 42px;
 }
 .footer-menu-item {
-  margin-bottom: 62px;
+  margin-bottom: 68px;
   text-align: start;
+  position: relative;
+  top: 42px;
+
+  display: flex;
+  gap: 24px;
+}
+.footer-menu-link {
+  display: flex;
+  justify-content: start;
+  color: white;
+  /* position: relative; */
 }
 
-.icon-close_cros {
+/* .icon-close_cros {
   fill: none;
   stroke: var(--footer-color);
-}
+} */
 .footer-soc-item {
   transition: 0.35s linear;
 }
@@ -796,7 +822,7 @@ a {
 
 .footer-item {
   display: flex;
-  flex-direction: space-between;
+  /* flex-direction: space-between; */
 }
 /* .footer-soc-wrap {
   display: flex;
