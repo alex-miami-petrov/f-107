@@ -625,6 +625,14 @@ a {
   padding: 14px 40px;
   border-radius: 100px;
   border: 1px solid #fd9222;
+  transition-property: background-color, color;
+  transition-duration: 1ms;
+}
+
+.loved-btn:hover {
+  background-color: orange;
+  color: white;
+  translate: transform;
 }
 
 /* FOOTER */
@@ -640,8 +648,9 @@ a {
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
   column-gap: 50px;
   gap: 63px;
 }
@@ -695,6 +704,8 @@ a {
 
 .ftr-contact {
   margin-left: 0;
+  /* position: absolute;
+  left: 100%; */
 }
 
 .footer-subtitle-contacts {
@@ -725,6 +736,8 @@ a {
 }
 
 .ftr-social {
+  /* position: relative; */
+
   margin-left: 469px;
 }
 
@@ -732,11 +745,13 @@ a {
   display: flex;
   flex-direction: row;
   gap: 14px;
+  /* text-align: start; */
 }
 .footer-subtitle-soc {
   display: flex;
   flex-direction: row;
   margin-bottom: 14px;
+  /* text-align: start; */
 }
 .footer-soc-icon {
   fill: none;
