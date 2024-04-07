@@ -261,13 +261,15 @@ a {
 
 .feauters-item {
   width: calc((100% - 176) / 3);
+  position: relative;
 }
 
-.feauters-subtitle::after {
+.feauters-item:not(:last-child)::after {
   content: "";
   display: flex;
   position: absolute;
   left: 90%;
+  top: 50%;
   border: 1px solid rgba(255, 255, 255, 0.5);
   width: 124px;
   height: 0px;
@@ -279,7 +281,6 @@ a {
   font-size: 18px;
   color: #fff;
   margin-bottom: 18px;
-  position: relative;
 }
 .feauters-text {
   font-size: 14px;
@@ -667,38 +668,21 @@ a {
 /* FOOTER */
 
 .footer {
-  /* width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px; */
   background: #1e1823;
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0 auto;
   color: #ffffff;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
 }
 
 .footer-container {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap;
-  flex-grow: 1; */
   padding-bottom: 50px;
   justify-content: space-between;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* column-gap: 50px; */
 }
 
 .footer-item {
-  /* display: flex;
-  flex-direction: row;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1.21429;
-  letter-spacing: -0.02em;
-  max-width: 300px; */
 }
 
 .footer-subtitle {
@@ -707,10 +691,6 @@ a {
   line-height: 1.21429;
   letter-spacing: -0.02em;
   max-width: 300px;
-}
-
-/* .footer-menu-link {
-  position: relative;
 }
 
 .footer-menu-link::before,
@@ -732,19 +712,12 @@ a {
 .footer-menu-link::before {
   right: 0;
   top: 23px;
-} */
-
-/* .footer-menu-link:hover::after,
-.footer-menu-link:hover::before {
-  width: 100%;
 }
-
-.footer-menu-link:hover,
+*/ .footer-menu-link:hover,
 .footer-menu-link:focus {
   color: orange;
-} */
-
-.ftr-contact {
+}
+*/ .ftr-contact {
   /* margin-left: 0; */
 }
 
@@ -767,12 +740,7 @@ a {
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
-  /* column-gap: 4px; */
 }
-
-/* .footer-contacts-item:not(:last-child) {
-  margin-bottom: 4px;
-} */
 
 .footer-contacts-link {
   color: #ffffff;
@@ -790,19 +758,14 @@ a {
 
 .ftr-social {
   margin-right: 50px;
-  /* position: relative; */
-  /* padding-top: 50px; */
-  /* margin-left: 460px; */
 }
 
 .footer-soc-list {
   display: flex;
   flex-direction: row;
   gap: 14px;
-  /* text-align: start; */
 }
 .footer-subtitle-soc {
-  /* display: flex; */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28571;
