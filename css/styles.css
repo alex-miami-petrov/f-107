@@ -254,14 +254,32 @@ a {
   gap: 88px;
   justify-content: center;
 }
+
+.features-img {
+  margin-bottom: 22px;
+}
+
 .feauters-item {
   width: calc((100% - 176) / 3);
 }
+
+.feauters-subtitle::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  left: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 124px;
+  height: 0px;
+  transform: rotate(-90deg);
+}
+
 .feauters-subtitle {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
   margin-bottom: 18px;
+  position: relative;
 }
 .feauters-text {
   font-size: 14px;
@@ -316,7 +334,7 @@ a {
 .taste-item {
   width: calc((100% - 3 * 32px) / 4);
   border-radius: 15px;
-
+  position: relative;
   padding-top: 28px;
   padding-bottom: 28px;
 }
@@ -340,13 +358,20 @@ a {
   margin: 0 auto;
   margin-bottom: 36px;
 }
+
+.taste-arrow {
+  position: absolute;
+  left: 220px;
+  top: 14px;
+}
+
 .taste-subtitle {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  /* color: #fff; */
+  position: relative;
 
   padding-left: 28px;
 }
