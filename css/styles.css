@@ -390,6 +390,7 @@ a {
 
 .made-wrapper {
   display: flex;
+  gap: 20px;
 }
 
 .made-image {
@@ -400,8 +401,8 @@ a {
 .made-sub-text-wrapper {
   background-color: #ffffff;
   border-radius: 15px;
-  margin-left: 20px;
-  /* padding-left: 32px; */
+  /* margin-left: 20px; */
+  /* padding: 32px; */
 }
 
 .made-subtitle {
@@ -421,8 +422,6 @@ a {
   padding-right: 32px;
 }
 .made-list-item {
-  /* margin-bottom: 24px; */
-  /* margin-left: 18px; */
   display: flex;
   gap: 8px;
   align-items: center;
@@ -481,17 +480,20 @@ a {
 }
 .products-list-item {
   width: calc((100% - 3 * 18px) / 4);
-
-  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  /* border: 1px solid #fff; */
+  padding-bottom: 32px;
+  padding-top: 32px;
+  text-align: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
 }
 
-/* .products-wrapper {
-  background-color: FFFFFF;
-  border-radius: 15px;
-  border: 1px solid #fff;
-} */
+.products-wrapper {
+}
 
 .products-image {
+  margin: 0 auto;
 }
 
 .products-subtitle {
@@ -515,6 +517,19 @@ a {
 
 .products-btn {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  padding: 8px 20px;
+  min-width: 94px;
+  height: 33px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
 }
 
 /* SELLERS */
@@ -691,6 +706,8 @@ a {
   line-height: 1.21429;
   letter-spacing: -0.02em;
   max-width: 300px;
+  margin-right: auto;
+  /* margin-bottom: 14px; */
 }
 
 .footer-menu-link::before,
@@ -801,6 +818,9 @@ a {
 } */
 
 .footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 24px;
 
@@ -819,6 +839,7 @@ a {
   display: flex;
   justify-content: start;
   color: white;
+
   /* position: relative; */
 }
 
@@ -837,4 +858,48 @@ a {
 }
 .footer-contacts-item:hover {
   transform: translateX(5px);
+}
+
+.backdor {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.footer-form {
+  display: flex;
+  gap: 8px;
+}
+.footer-input {
+  width: 313px;
+  height: 52px;
+}
+.footer-btn {
+  border: none;
+
+  border-radius: 100px;
+  padding: 17px 40px;
+  min-width: 137px;
+  height: 52px;
+}
+
+.footer-input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.model-input:invalid {
+  border-color: red;
 }
