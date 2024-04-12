@@ -943,6 +943,8 @@ a {
 }
 
 .btn-x {
+  display: block;
+  fill: #111111;
 }
 
 /* .modal-close-btn:hover,
