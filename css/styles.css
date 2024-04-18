@@ -422,9 +422,14 @@ a {
   gap: 20px;
 }
 
+.made-wrapper picture {
+  flex-shrink: 0;
+}
+
 .made-image {
   max-width: 100%;
   height: auto;
+  flex-shrink: 0;
 }
 
 .made-sub-text-wrapper {
@@ -1279,6 +1284,10 @@ a {
   .made {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .made-wrapper picture {
+    flex-shrink: 0;
   }
 
   .hero-wrap {

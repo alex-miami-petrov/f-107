@@ -272,12 +272,32 @@
             HOW IT’S <span class="accent">MADE?</span>
           </h2>
           <div class="made-wrapper">
+            <picture>
+              <source
+                srcset="./images/image.jpg 1x, ./images/made-image-2x.jpg 2x"
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="
+                  ./images/made-img-tab.jpg    1x,
+                  ./images/made-img-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/made-img-mob.jpg    1x,
+                  ./images/made-img-mob-2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+            </picture>
             <img
-              class="made-image"
               src="/images/image.jpg"
               alt="liquid chocolate"
               width="600"
               height="400"
+              class="made-image"
             />
             <div class="made-sub-text-wrapper">
               <h3 class="made-subtitle">
