@@ -92,6 +92,7 @@ a {
 .header-menu-list {
   display: flex;
   gap: 24px;
+  display: none;
 }
 
 .header-container {
@@ -109,6 +110,7 @@ a {
 .header-soc-list {
   display: flex;
   gap: 14px;
+  display: none;
 }
 .header-soc-icon {
   fill: transparent;
@@ -120,6 +122,44 @@ a {
   color: #fd9222;
 }
 
+.menu-open-btn {
+}
+.menu {
+}
+.mob-menu {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: 0;
+}
+.mob-menu-close {
+}
+.mob-menu-nav {
+  align-self: center;
+}
+.mob-menu-list {
+  margin-bottom: 32px;
+}
+.header-menu-item {
+}
+.mob-menu-link {
+}
+.mob-menu-item {
+}
+.mob-soc-list {
+  display: flex;
+  gap: 14px;
+}
+.mob-soc-icon {
+}
+.mob-menu-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* HERO */
 
 .hero {
@@ -934,7 +974,7 @@ a {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-open {
+.is-open {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
